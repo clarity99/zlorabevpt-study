@@ -1,0 +1,11 @@
+.DS_Store
+.playwright-mcp/
+*.pdf
+*.m4a
+*.traineddata
+study-kit-desktop.png
+tmp/
+output/
+zlorabe-zapiski.txt
+power-helping-professions-core-story.html
+power-helping-professions-study.html

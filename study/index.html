@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moč v pomagajočih poklicih - študijski komplet</title>
+  <link rel="icon" href="data:," />
+  <style>
+    :root {
+      --bg: #f4f2ec;
+      --panel: #fffdf8;
+      --ink: #1e2421;
+      --muted: #65706a;
+      --line: #d7d2c4;
+      --accent: #0f6b63;
+      --accent-2: #8f3f2b;
+      --warn: #aa6b00;
+      --ok: #2d7146;
+      --chip: #e7efed;
+      --shadow: 0 10px 30px rgba(30, 36, 33, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: 0;
+    }
+
+    body { line-height: 1.5; }
+
+    a { color: var(--accent); }
+
+    .app {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      border-right: 1px solid var(--line);
+      background: #ebe7db;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: auto;
+    }
+
+    .brand h1 {
+      margin: 0 0 8px;
+      font-size: 1.35rem;
+      line-height: 1.15;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .brand p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .nav {
+      display: grid;
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .nav button,
+    .small-button,
+    .primary-button,
+    .icon-button {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel);
+      color: var(--ink);
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav button {
+      text-align: left;
+      padding: 10px 12px;
+      min-height: 42px;
+    }
+
+    .nav button.active {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .sidebar-block {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .progress-line {
+      height: 8px;
+      border-radius: 999px;
+      background: #d7d2c4;
+      overflow: hidden;
+      margin: 8px 0;
+    }
+
+    .progress-line span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 180ms ease;
+    }
+
+    main {
+      padding: 28px clamp(18px, 4vw, 48px) 56px;
+      max-width: 1180px;
+      width: 100%;
+    }
+
+    .view { display: none; }
+    .view.active { display: block; }
+
+    .view-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: start;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.65rem, 3vw, 2.35rem);
+      line-height: 1.1;
+    }
+
+    h3 { margin: 0 0 10px; font-size: 1.05rem; }
+    h4 { margin: 0 0 8px; font-size: 0.94rem; color: var(--accent-2); text-transform: upperčase; letter-spacing: 0.04em; }
+
+    .lede {
+      margin: 0;
+      max-width: 78ch;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .panel,
+    .chapter,
+    .flashcard,
+    .question-card,
+    .day-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+
+    .concept-map {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .map-row {
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfaf5;
+    }
+
+    .map-row strong { color: var(--accent); }
+
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 0 14px;
+    }
+
+    input,
+    select {
+      min-height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: white;
+      color: var(--ink);
+      padding: 7px 10px;
+      font: inherit;
+    }
+
+    input[type="search"] { min-width: min(380px, 100%); }
+
+    .chapter-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .chapter summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .chapter summary::-webkit-details-marker { display: none; }
+
+    .chapter-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .line-ref {
+      color: var(--muted);
+      font-size: 0.82rem;
+      white-spače: nowrap;
+    }
+
+    .thesis {
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      margin: 12px 0;
+      font-weight: 650;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 1.1rem;
+    }
+
+    li + li { margin-top: 5px; }
+
+    .chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid #cad9d5;
+      color: #24433f;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 0.78rem;
+    }
+
+    .flashcard {
+      min-height: 310px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 14px;
+    }
+
+    .card-fače {
+      display: grid;
+      align-content: center;
+      min-height: 150px;
+      font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+      font-weight: 760;
+      line-height: 1.25;
+    }
+
+    .card-back {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      color: #29322e;
+      font-size: 1.03rem;
+      font-weight: 500;
+    }
+
+    .flashcard.revealed .card-back { display: block; }
+
+    .small-button,
+    .primary-button,
+    .icon-button {
+      padding: 8px 11px;
+      min-height: 38px;
+    }
+
+    .primary-button {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+      font-weight: 750;
+    }
+
+    .small-button.active {
+      background: #213a36;
+      color: white;
+      border-color: #213a36;
+    }
+
+    .status-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .muted { color: var(--muted); }
+
+    .question-card {
+      display: grid;
+      gap: 10px;
+    }
+
+    .answer {
+      display: none;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+    }
+
+    .question-card.open .answer { display: block; }
+
+    .timer {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 12px;
+      background: #eff5f3;
+      border: 1px solid #c9dbd6;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+
+    .timer strong {
+      font-size: 1.45rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--accent);
+      min-width: 72px;
+    }
+
+    .day-card {
+      display: grid;
+      gap: 8px;
+    }
+
+    .day-card .day {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: white;
+      border-radius: 50%;
+      font-weight: 800;
+    }
+
+    .exports {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+
+    .empty {
+      padding: 18px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 900px) {
+      .app { grid-template-columns: 1fr; }
+      .sidebar {
+        position: static;
+        height: auto;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .grid,
+      .grid-3,
+      .map-row { grid-template-columns: 1fr; }
+      .view-header { display: block; }
+    }
+
+    @media (max-width: 520px) {
+      .nav { grid-template-columns: 1fr; }
+      main { padding-inline: 14px; }
+      .status-row { display: grid; }
+      input[type="search"] { min-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Moč v pomagajočih poklicih</h1>
+        <p>9-dnevni slovenski komplet za ustni izpit.</p>
+      </div>
+      <nav class="nav" aria-label="Glavni pogledi">
+        <button class="active" data-view="overview">Pregled knjige</button>
+        <button data-view="chapters">Poglavja</button>
+        <button data-view="cards">Kartice</button>
+        <button data-view="oral">Ustni izpit</button>
+        <button data-view="clinical">Klinične povezave</button>
+        <button data-view="schedule">9-dnevni načrt</button>
+      </nav>
+      <div class="sidebar-block">
+        <strong>Napredek kartic</strong>
+        <div class="progress-line" aria-hidden="true"><span id="progressBar"></span></div>
+        <div id="progressText">0 / 0 označenih</div>
+      </div>
+      <div class="sidebar-block">
+        <strong>Izvozi</strong>
+        <div class="exports">
+          <a href="./study-guide.md">Study guide</a>
+          <a href="./flashcards.csv">Flashcards CSV</a>
+          <a href="./oral-questions.md">Ustna vprašanja</a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section id="overview" class="view active">
+        <div class="view-header">
+          <div>
+            <h2>Pregled knjige</h2>
+            <p class="lede" id="overviewThesis"></p>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Enominutni uvod za ustni izpit</h3>
+          <p id="oralOpening"></p>
+        </div>
+        <div class="concept-map" id="conceptMap"></div>
+      </section>
+
+      <section id="chapters" class="view">
+        <div class="view-header">
+          <div>
+            <h2>Poglavja</h2>
+            <p class="lede">Vsako poglavje ima tezo, glavne točke, tveganja, ustna vprašanja in klinični most za izkušenega psihoterapevta.</p>
+          </div>
+        </div>
+        <div class="toolbar">
+          <input id="chapterSearch" type="search" placeholder="Išči po poglavjih, pojmih ali vprašanjih" />
+          <button class="small-button" id="expandAll">Razpri vse</button>
+          <button class="small-button" id="collapseAll">Zapri vse</button>
+        </div>
+        <div class="chapter-list" id="chapterList"></div>
+      </section>
+
+      <section id="cards" class="view">
+        <div class="view-header">
+          <div>
+            <h2>Kartice</h2>
+            <p class="lede">Označi kartice kot lahko, srednje ali težko. Stanje se shrani lokalno v brskalniku.</p>
+          </div>
+        </div>
+        <div class="toolbar">
+          <input id="cardSearch" type="search" placeholder="Išči kartice" />
+          <select id="tagFilter" aria-label="Filter oznak"></select>
+          <select id="statusFilter" aria-label="Filter napredka">
+            <option value="all">Vse kartice</option>
+            <option value="new">Nove</option>
+            <option value="hard">Težke</option>
+            <option value="medium">Srednje</option>
+            <option value="easy">Lahke</option>
+          </select>
+          <button class="small-button" id="shuffleCards">Premešaj</button>
+          <button class="small-button" id="resetProgress">Ponastavi napredek</button>
+        </div>
+        <div class="flashcard" id="flashcard"></div>
+      </section>
+
+      <section id="oral" class="view">
+        <div class="view-header">
+          <div>
+            <h2>Ustni izpit</h2>
+            <p class="lede">Vadi odgovore v strukturi: teza, tri argumentne točke, klinični primer, zaključna poanta.</p>
+          </div>
+        </div>
+        <div class="timer">
+          <strong id="timerDisplay">04:00</strong>
+          <button class="primary-button" id="startTimer">Start</button>
+          <button class="small-button" id="pauseTimer">Pavza</button>
+          <button class="small-button" id="resetTimer">Reset</button>
+          <span class="muted">Priporočilo: 4 minute na odgovor.</span>
+        </div>
+        <div class="grid" id="oralQuestions"></div>
+      </section>
+
+      <section id="clinical" class="view">
+        <div class="view-header">
+          <div>
+            <h2>Klinične povezave</h2>
+            <p class="lede">Vprašanja so namenjena hitremu prehodu iz teorije v izkušeno psihoterapevtsko presojo.</p>
+          </div>
+        </div>
+        <div class="grid" id="clinicalPrompts"></div>
+      </section>
+
+      <section id="schedule" class="view">
+        <div class="view-header">
+          <div>
+            <h2>9-dnevni načrt</h2>
+            <p class="lede">Vsak dan predvideva 90 minut: razumevanje, aktivni priklic, kartice in glasno odgovarjanje.</p>
+          </div>
+        </div>
+        <div class="grid-3" id="scheduleGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./study-data.js"></script>
+  <script>
+    const data = window.STUDY_DATA;
+    const stateKey = "power-helping-study-progress-v1";
+    let progress = JSON.parse(localStorage.getItem(stateKey) || "{}");
+    let currentCards = data.cards.map((_, i) => i);
+    let cardPointer = 0;
+    let revealed = false;
+    let timerSeconds = 240;
+    let timerHandle = null;
+
+    function saveProgress() {
+      localStorage.setItem(stateKey, JSON.stringify(progress));
+      renderProgress();
+    }
+
+    function renderProgress() {
+      const marked = Object.keys(progress).length;
+      const total = data.cards.length;
+      const pct = total ? Math.round((marked / total) * 100) : 0;
+      document.getElementById("progressBar").style.width = pct + "%";
+      document.getElementById("progressText").textContent = `${marked} / ${total} označenih`;
+    }
+
+    function setView(id) {
+      document.querySelectorAll(".view").forEach((view) => view.classList.toggle("active", view.id === id));
+      document.querySelectorAll(".nav button").forEach((button) => button.classList.toggle("active", button.dataset.view === id));
+    }
+
+    function renderOverview() {
+      document.getElementById("overviewThesis").textContent = data.overview.thesis;
+      document.getElementById("oralOpening").textContent = data.overview.oralOpening;
+      document.getElementById("conceptMap").innerHTML = data.overview.map.map(([label, text]) => `
+        <div class="map-row"><strong>${escapeHtml(label)}</strong><span>${escapeHtml(text)}</span></div>
+      `).join("");
+    }
+
+    function chapterMarkup(chapter, open = false) {
+      return `
+        <details class="chapter" ${open ? "open" : ""}>
+          <summary>
+            <div class="chapter-title">
+              <h3>${escapeHtml(chapter.title)}</h3>
+              <span class="line-ref">vrstice ${escapeHtml(chapter.lines)}</span>
+            </div>
+            <p class="thesis">${escapeHtml(chapter.thesis)}</p>
+            <div class="chips">${chapter.risks.map((risk) => `<span class="chip">${escapeHtml(risk)}</span>`).join("")}</div>
+          </summary>
+          ${chapter.detailed && chapter.detailed.length ? `
+          <div>
+            <h4>Podrobni povzetek</h4>
+            ${chapter.detailed.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+          </div>
+          ` : ""}
+          ${chapter.notes && chapter.notes.length ? `
+          <div>
+            <h4>Moje opombe med branjem</h4>
+            ${chapter.notes.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+          </div>
+          ` : ""}
+          <div class="grid">
+            <div>
+              <h4>Ključne točke</h4>
+              <ul>${chapter.points.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
+            </div>
+            <div>
+              <h4>Ustna vprašanja</h4>
+              <ul>${chapter.prompts.map((prompt) => `<li>${escapeHtml(prompt)}</li>`).join("")}</ul>
+            </div>
+          </div>
+          <h4>Klinični most</h4>
+          <ul>${chapter.clinical.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        </details>
+      `;
+    }
+
+    function renderChapters() {
+      const query = document.getElementById("chapterSearch").value.trim().toLowerCase();
+      const chapters = data.chapters.filter((chapter) => !query || JSON.stringify(chapter).toLowerCase().includes(query));
+      document.getElementById("chapterList").innerHTML = chapters.length
+        ? chapters.map((chapter, index) => chapterMarkup(chapter, index === 0 && !query)).join("")
+        : `<div class="empty">Ni zadetkov.</div>`;
+    }
+
+    function setupTags() {
+      const tags = [...new Set(data.cards.flatMap((card) => card[3].split(",")))].sort();
+      document.getElementById("tagFilter").innerHTML = `<option value="all">Vse oznake</option>` + tags.map((tag) => `<option value="${escapeHtml(tag)}">${escapeHtml(tag)}</option>`).join("");
+    }
+
+    function filterCards() {
+      const query = document.getElementById("cardSearch").value.trim().toLowerCase();
+      const tag = document.getElementById("tagFilter").value;
+      const status = document.getElementById("statusFilter").value;
+      currentCards = data.cards
+        .map((card, index) => ({ card, index }))
+        .filter(({ card }) => !query || `${card[1]} ${card[2]} ${card[3]}`.toLowerCase().includes(query))
+        .filter(({ card }) => tag === "all" || card[3].split(",").includes(tag))
+        .filter(({ card }) => status === "all" || (status === "new" ? !progress[card[0]] : progress[card[0]] === status))
+        .map(({ index }) => index);
+      cardPointer = 0;
+      revealed = false;
+      renderCard();
+    }
+
+    function renderCard() {
+      const wrap = document.getElementById("flashcard");
+      if (!currentCards.length) {
+        wrap.innerHTML = `<div class="empty">Ni kartic za izbrane filtre.</div>`;
+        return;
+      }
+      const card = data.cards[currentCards[cardPointer]];
+      const status = progress[card[0]] || "new";
+      wrap.classList.toggle("revealed", revealed);
+      wrap.innerHTML = `
+        <div class="status-row">
+          <span class="muted">Kartica ${cardPointer + 1} / ${currentCards.length}</span>
+          <span class="chip">${escapeHtml(statusLabel(status))}</span>
+        </div>
+        <div>
+          <div class="card-face">${escapeHtml(card[1])}</div>
+          <div class="card-back">${escapeHtml(card[2])}</div>
+          <div class="chips">${card[3].split(",").map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>
+        </div>
+        <div class="status-row">
+          <div>
+            <button class="primary-button" id="revealCard">${revealed ? "Skrij odgovor" : "Pokaži odgovor"}</button>
+            <button class="small-button" id="prevCard">Prejšnja</button>
+            <button class="small-button" id="nextCard">Naslednja</button>
+          </div>
+          <div>
+            <button class="small-button ${status === "hard" ? "active" : ""}" data-grade="hard">Težko</button>
+            <button class="small-button ${status === "medium" ? "active" : ""}" data-grade="medium">Srednje</button>
+            <button class="small-button ${status === "easy" ? "active" : ""}" data-grade="easy">Lahko</button>
+          </div>
+        </div>
+      `;
+      document.getElementById("revealCard").addEventListener("click", () => {
+        revealed = !revealed;
+        renderCard();
+      });
+      document.getElementById("prevCard").addEventListener("click", () => moveCard(-1));
+      document.getElementById("nextCard").addEventListener("click", () => moveCard(1));
+      wrap.querySelectorAll("[data-grade]").forEach((button) => {
+        button.addEventListener("click", () => {
+          progress[card[0]] = button.dataset.grade;
+          saveProgress();
+          moveCard(1);
+        });
+      });
+    }
+
+    function moveCard(delta) {
+      if (!currentCards.length) return;
+      cardPointer = (cardPointer + delta + currentCards.length) % currentCards.length;
+      revealed = false;
+      renderCard();
+    }
+
+    function statusLabel(status) {
+      return { new: "novo", hard: "težko", medium: "srednje", easy: "lahko" }[status] || status;
+    }
+
+    function shuffleCards() {
+      for (let i = currentCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
+      }
+      cardPointer = 0;
+      revealed = false;
+      renderCard();
+    }
+
+    function renderOral() {
+      document.getElementById("oralQuestions").innerHTML = data.oralQuestions.map((item, index) => `
+        <article class="question-card">
+          <h3>${index + 1}. ${escapeHtml(item.q)}</h3>
+          <button class="small-button" data-open-question="${index}">Pokaži ogrodje odgovora</button>
+          <div class="answer">${escapeHtml(item.outline)}</div>
+        </article>
+      `).join("");
+      document.querySelectorAll("[data-open-question]").forEach((button) => {
+        button.addEventListener("click", () => {
+          button.closest(".question-card").classList.toggle("open");
+        });
+      });
+    }
+
+    function renderClinical() {
+      document.getElementById("clinicalPrompts").innerHTML = data.clinicalPrompts.map((prompt, index) => `
+        <article class="question-card">
+          <h3>${index + 1}</h3>
+          <p>${escapeHtml(prompt)}</p>
+        </article>
+      `).join("");
+    }
+
+    function renderSchedule() {
+      document.getElementById("scheduleGrid").innerHTML = data.schedule.map(([day, title, work, outcome]) => `
+        <article class="day-card">
+          <span class="day">${escapeHtml(day)}</span>
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(work)}</p>
+          <p><strong>Cilj:</strong> ${escapeHtml(outcome)}</p>
+        </article>
+      `).join("");
+    }
+
+    function updateTimer() {
+      const minutes = String(Math.floor(timerSeconds / 60)).padStart(2, "0");
+      const seconds = String(timerSeconds % 60).padStart(2, "0");
+      document.getElementById("timerDisplay").textContent = `${minutes}:${seconds}`;
+    }
+
+    function startTimer() {
+      if (timerHandle) return;
+      timerHandle = setInterval(() => {
+        timerSeconds = Math.max(0, timerSeconds - 1);
+        updateTimer();
+        if (timerSeconds === 0) pauseTimer();
+      }, 1000);
+    }
+
+    function pauseTimer() {
+      clearInterval(timerHandle);
+      timerHandle = null;
+    }
+
+    function resetTimer() {
+      pauseTimer();
+      timerSeconds = 240;
+      updateTimer();
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    document.querySelectorAll(".nav button").forEach((button) => {
+      button.addEventListener("click", () => setView(button.dataset.view));
+    });
+
+    document.getElementById("chapterSearch").addEventListener("input", renderChapters);
+    document.getElementById("expandAll").addEventListener("click", () => document.querySelectorAll(".chapter").forEach((item) => item.open = true));
+    document.getElementById("collapseAll").addEventListener("click", () => document.querySelectorAll(".chapter").forEach((item) => item.open = false));
+    document.getElementById("cardSearch").addEventListener("input", filterCards);
+    document.getElementById("tagFilter").addEventListener("change", filterCards);
+    document.getElementById("statusFilter").addEventListener("change", filterCards);
+    document.getElementById("shuffleCards").addEventListener("click", shuffleCards);
+    document.getElementById("resetProgress").addEventListener("click", () => {
+      progress = {};
+      saveProgress();
+      filterCards();
+    });
+    document.getElementById("startTimer").addEventListener("click", startTimer);
+    document.getElementById("pauseTimer").addEventListener("click", pauseTimer);
+    document.getElementById("resetTimer").addEventListener("click", resetTimer);
+    document.addEventListener("keydown", (event) => {
+      if (!document.getElementById("cards").classList.contains("active")) return;
+      if (event.key === " ") {
+        event.preventDefault();
+        revealed = !revealed;
+        renderCard();
+      }
+      if (event.key === "ArrowRight") moveCard(1);
+      if (event.key === "ArrowLeft") moveCard(-1);
+    });
+
+    renderOverview();
+    renderChapters();
+    setupTags();
+    filterCards();
+    renderOral();
+    renderClinical();
+    renderSchedule();
+    renderProgress();
+    updateTimer();
+  </script>
+</body>
+</html>
