@@ -628,3 +628,111 @@ window.STUDY_DATA.userNotes = {
 window.STUDY_DATA.chapters.forEach((chapter) => {
   chapter.notes = window.STUDY_DATA.userNotes[chapter.id] || [];
 });
+
+window.STUDY_DATA.gestaltCritique = {
+  intro: "Spodnja kritika Guggenbuhl-Craigove knjige izhaja iz sodobne gestalt psihoterapije – relacijskega, fenomenološkega in na polje usmerjenega pristopa, ki moč, senco in odnos razume drugače kot jungovska tradicija. Kritika ni razvrednotenje knjige, ampak dialog z njo: gestalt perspektiva nekatere avtorjeve uvide podpre in poglobi, druge pa problematizira ali dopolni z lastnimi konceptualnimi orodji.",
+  strengths: [
+    {
+      title: "Relacijska občutljivost za moč v terapevtskem polju",
+      text: "Guggenbuhl-Craigova osrednja teza – da pomoč vedno vsebuje moč – je iz gestalt perspektive nesporna in dobrodošla. Gestalt psihoterapija od Laure Perls naprej poudarja, da je terapevtski odnos vedno polje, v katerem se moč neenakomerno razporeja. Avtorjevo vztrajanje, da se moč ne skriva samo v odkritih hierarhijah, ampak tudi v interpretativni nadmoči, diagnostičnem jeziku in moralni gotovosti, je zelo skladno s gestalt kritiko 'strokovnjaštva', ki klienta reducira na objekt opazovanja."
+    },
+    {
+      title: "Kritika objektivistične drže",
+      text: "Avtor večkrat opozori, da objektivnost lahko postane obramba. To je blizu temeljni gestalt fenomenološki drži: terapevt ni nevtralni opazovalec, ampak soudeležen v polju. Gestalt tradicija – posebej Staemmler, Jacobs in Francesetti – je razvila pojem 'situiranega vedenja' (situated knowledge): kar terapevt 'opazi', je vedno tudi izraz njegovega stika s klientom in z lastno ozadnostjo. Avtorjeva kritika lažne objektivnosti je tu zelo blizu gestalt epistemologiji."
+    },
+    {
+      title: "Poudarek na terapevtovi ranljivosti",
+      text: "Zahteva, da terapevt ohrani stik z lastno ranljivostjo, je gestalt terapiji blizu. V gestalt razumevanju je terapevtova prisotnost (presence) – zmožnost biti tu s celotno svojo človeškostjo, vključno z negotovostjo in nevednostjo – eden od ključnih zdravilnih dejavnikov. Avtorjeva figura 'ranjenega zdravilca' se v gestalt jeziku prevede kot terapevt, ki ostaja dosegljiv za stik, namesto da se umakne za vlogo ali tehniko."
+    },
+    {
+      title: "Opozorilo pred posesivnostjo terapevtskega odnosa",
+      text: "Poglavje o pacientovem zunajanalitičnem življenju je iz gestalt perspektive izjemno relevantno. Gestalt terapija razume zdrav organizem kot tistega, ki ustvarjalno prilagaja svoj stik z okoljem. Če terapija postane zaprt sistem, ki klientove zunanje stike razvrednoti ali kolonizira, to ni več podpora samoregulaciji, ampak nasilje nad klientovo celostno kontaktno zmožnostjo."
+    }
+  ],
+  critiques: [
+    {
+      title: "Arhetipski okvir zamegljuje konkretno fenomenologijo moči",
+      text: "Najtehtnejša gestalt kritika zadene avtorjevo metodo: moč razlaga skozi arhetipe, mite in intrapsiično dinamiko (senca, projekcija, razcep arhetipa), namesto skozi konkretni opis terapevtskega polja tu in zdaj. Gestalt pristop bi vprašal: kaj se dogaja med nama v tem trenutku? Kako se moč kaže v tonu glasu, v telesni drži, v mikro-interakcijah terapevtske ure? Guggenbuhl-Craigov jezik ostaja na ravni mitologije in notranje psihologije, medtem ko gestalt fenomenologija zahteva opis izkušnje na kontaktni meji – tam, kjer se dva organizma srečata.",
+      implications: "Za izkušenega gestalt terapevta to pomeni: avtorjeve opise je treba prevesti iz arhetipskega v fenomenološki jezik. 'Razcep arhetipa' postane opis prekinjenega stika; 'projekcija sence' postane opis neozaveščenega procesa na kontaktni meji; 'moč' postane konkreten opis, kako terapevt organizira polje v danem trenutku."
+    },
+    {
+      title: "Individualistična epistemologija: senca kot intrapsiični pojav",
+      text: "Avtor moč razume pretežno kot problem posameznika – terapevtove nezavedne sence. Gestalt teorija polja (Lewin, Parlett, Spagnuolo Lobb) pa moč razume kot emergentno lastnost polja: moč ni nekaj, kar terapevt 'ima' in projicira, ampak se oblikuje med obema akteroma in v širšem institucionalnem, kulturnem in družbenem kontekstu. To pomeni, da problem moči ni rešljiv samo z introspekeijo terapevta (zavedanje lastne sence), ampak zahteva analizo celotnega polja: institucije, diagnostičnega sistema, kulturnih norm, ekonomskih razmerij, rasnih in spolnih dinamik.",
+      implications: "Gestalt kritika zato presega avtorjevo rešitev (supervizija + zavedanje sence + eros) in zahteva tudi strukturne odgovore: demokratizacijo terapevtskega odnosa, klientovo soglasje kot živ proces, transparentnost o moči, kritično refleksijo institucionalnih okvirov in aktivno delo na družbeni pravičnosti znotraj terapevtskega polja."
+    },
+    {
+      title: "Odsotnost koncepta kontaktnih motenj pri opisu zlorabe",
+      text: "Gestalt psihoterapija razpolaga s preciznim jezikom za opis procesov, ki jih avtor obravnava metaforično. Kar avtor imenuje 'razcep arhetipa', gestalt tradicija opiše kot retrofleksijo (terapevt obrne lastno ranljivost vase in je ne pokaže), konfluenco (zlitje z vlogo zdravilca brez meje), projekcijo (pripisovanje lastne nemoči klientu) ali defleksijo (izogibanje neposrednemu stiku z lastno prizadetostjo). Ti koncepti niso mitološki, ampak fenomenološko preverljivi: opisujejo konkretne prekinitve stika na kontaktni meji.",
+      implications: "Prednost gestalt jezika je, da omogoča intervencijo v realnem času: terapevt ali supervizor lahko prepozna kontaktno motnjo v trenutku, ko se dogaja, namesto da jo retroaktivno razlaga skozi mitološki okvir. To je praktično uporabnejše za supervizijo in za trening."
+    },
+    {
+      title: "Paradoksna teorija spremembe vs. 'zavedanje sence'",
+      text: "Guggenbuhl-Craig predlaga, da se terapevt zave svoje sence – torej tistega, kar potlačuje. To je blizu gestalt razumevanju, a gestalt paradoksna teorija spremembe (Beisser, 1970) gre dalje: sprememba ne nastane z zavestnim prizadevanjem, ampak s polnim sprejemanjem tistega, kar je. Terapevt se ne 'zave sence' kot predmeta, ampak se dovoli biti to, kar je – vključno z oblastnim, šarlatanskim, lenobnim ali sadističnim delom. Gestalt ne zahteva 'premagovanja' sence, ampak polno kontaktiranje z njo brez prisilnega spreminjanja.",
+      implications: "Razlika je subtilna, a pomembna: avtorjev pristop ima rahel prizvok moralnega prizadevanja ('moraš vedeti za svojo senco'). Gestalt paradoks pa pravi: prav v trenutku, ko se terapevt popolnoma sprejme kot oblastnega, se oblast paradoksno zmanjša. Moralni imperativ 'bodi zavesten' lahko sam postane nova oblika narcistične kontrole."
+    },
+    {
+      title: "Pomanjkanje dialoškega principa",
+      text: "Knjiga skoraj ne omenja dialoga v Bubrovem smislu (Ich-Du), ki je za sodobno gestalt terapijo konstitutiven. Avtorjeva rešitev je individualna: terapevt naj se zave lastne sence, naj ima odnose zunaj terapije, naj ohrani eros. Toda gestalt relacijska tradicija (Hycner, Jacobs, Yontef) poudarja, da se moč transformira šele v dialogu – v resnično vzajemnem srečanju, kjer oba udeleženca tvegata. Avtor sicer omeni 'bratstvo' ranjenega zdravilca, a ne razvije pojma dialoškega srečanja kot terapevtske prakse.",
+      implications: "Gestalt bi dodal: transformacija moči se ne zgodi v terapevtovi glavi (zavedanje), ampak med terapevtom in klientom – v trenutkih, ko se terapevt pusti presenetiti, ko dopusti, da klient vpliva nanj, ko potrdi klientovo izkušnjo brez da bi jo interpretiral. Inkluzija (Buber) – sposobnost doživeti svet iz klientove perspektive, ne da bi zapustil svojo – je gestalt odgovor na problem moči."
+    },
+    {
+      title: "Simbolna interpretacija kot oblika moči – nedoslednost",
+      text: "Avtor sicer opozarja pred 'lažnim prerokom' in pred inflacijo interpretacije, hkrati pa sam piše iz jungovskega interpretativnega okvira, ki klientove izkušnje vidi skozi arhetipe, mite in simbole. Gestalt kritika bi opozorila na protislovje: ali je simbolna interpretacija nevarna oblika moči (kar avtor trdi) ali pa je legitimna metoda (kar avtor sam uporablja)? Fenomenološki gestalt pristop bi bil tu doslednejši: ostati pri opisu izkušnje, pri čutnem in telesnem, pri tem, kar se kaže, namesto da izkušnjo dvigujemo na 'višjo' raven pomena.",
+      implications: "To ne pomeni, da gestalt zavrača smisel ali globino. Pomeni, da smisel v gestalt tradiciji nastaja iz kontakta, ne iz interpretacije od zunaj. Klient sam oblikuje pomen svoje izkušnje; terapevt ga ne razkriva, ampak podpira proces oblikovanja smisla skozi ozaveščanje, eksperiment in dialog."
+    },
+    {
+      title: "Zanemarjanje telesa in procesa ozaveščanja",
+      text: "Čeprav avtor omeni 'telesno razsežnost odnosa', ostane njegov diskurz pretežno intelektualen in mitološki. Gestalt psihoterapija – posebej njene somatske veje (Kepner, Frank) – bi poudarila, da se moč utelešuje: v tonusu, dihanju, prostorski razporeditvi, smeri pogleda, v hitrosti govora. Zavedanje moči zato ni samo kognitivno ('vem, da imam senco'), ampak telesno-fenomenološko: kako se moja oblast kaže v mojem telesu in v klientovem telesu tu in zdaj?",
+      implications: "Gestalt trening zato vključuje somatsko ozaveščanje terapevta med terapevtsko uro: kje zadržujem dih, ko se počutim ogroženega? Kako se moja drža spremeni, ko prevzamem 'strokovno' vlogo? To je bolj neposreden in preverljiv pristop kot mitološka refleksija o arhetipih."
+    },
+    {
+      title: "Koncept ustvarjalne prilagoditve vs. patologizacija 'sence'",
+      text: "Avtor ohranja jungovsko razumevanje sence kot nečesa temnega, potlačenega, nevarnega – česar se moramo 'zavedati', da nas ne prevlada. Gestalt perspektiva pa bi 'senčne' impulze – željo po moči, sadistično zadovoljstvo, narcistično potrebo – razumela kot ustvarjalne prilagoditve, ki so imele funkcijo v določenem polju. Terapevtova 'oblast' ni zlo, ampak nekdanji način preživetja (morda v družini, v izobraževalnem sistemu, v poklicni socializaciji), ki se je zamrznil in postal rigiden.",
+      implications: "To ne pomeni opravičevanja zlorabe. Pomeni drugačno terapevtsko držo do lastnih 'senčnih' impulzov: namesto moralnega boja s senco (zavedaj se! omeji se!) gestalt predlaga radovednost, empatijo do lastne rigidnosti in eksperiment z novimi oblikami stika. Rigidna oblika stika se ne raztopi z moralno voljo, ampak s podporo in varnostjo za nov eksperiment."
+    },
+    {
+      title: "Odsotnost situacijskega in družbenega konteksta moči",
+      text: "Avtor obravnava moč skoraj izključno kot intrapsiični in medosebni pojav. Sodobna gestalt terapija – posebej kritična gestalt tradicija (Philippson, Bloom, Roubal) – poudarja, da moč v terapiji ni ločena od širših družbenih razmerij moči: rasizma, seksizma, heteronormativnosti, razrednih razlik, ableizma. Terapevtov 'power shadow' ni samo osebna senca, ampak tudi utelešenje strukturnega nasilja, ki ga terapevt nosi kot beli, moški, heteroseksualni, izobraženi strokovnjak.",
+      implications: "Sodobna gestalt kritika bi zato avtorju očitala, da ostaja pri individualno-psihološki razlagi moči in ne vidi njene strukturne razsežnosti. Supervizija ni dovolj, če ne vključuje kritične refleksije o terapevtovem družbenem položaju in privilegijih. To je pomembna dopolnitev za sodobni izpit."
+    },
+    {
+      title: "Enostranska fokusiranost na terapevta – klientov agens",
+      text: "Knjiga je pretežno usmerjena v terapevtovo senco, ranljivost in odgovornost. Klient nastopa večinoma kot ranljiv, ogrožen, odvisen od terapevtove samorefleksije. Gestalt perspektiva bi poudarila klientov agens, zmožnost in samoregulacijo. Tudi v asimetričnem odnosu je klient aktiven soustvarjalec polja. Gestalt terapija zaupa organizmu: klient ni pasivna žrtev terapevtove sence, ampak ima lastne mehanizme preživetja, odpora in samoregulacije.",
+      implications: "To ne pomeni, da je zloraba klientova odgovornost. Pomeni, da gestalt perspektiva dodaja tretjo dimenzijo: poleg terapevtove samorefleksije in zunanjih varoval (supervizija, etični kodeksi) je tu tudi podpora klientovi zmožnosti, da prepozna, poimenuje in zavrne terapevtovo oblast. Terapija, ki krepi klientov agens, je sama po sebi zaščita pred zlorabo."
+    }
+  ],
+  synthesis: {
+    title: "Sinteza: kaj gestalt perspektiva doda za ustni izpit",
+    points: [
+      "Guggenbuhl-Craig pravilno identificira problem moči, a ga obravnava pretežno intrapsiično in mitološko. Gestalt doda: moč je pojav polja, ne samo terapevtove notranjosti.",
+      "Avtorjeva rešitev (zavedanje sence + eros + supervizija) je nujna, a nezadostna. Gestalt doda: dialog, inkluzija, podpora klientovemu agensu, strukturna refleksija, telesno ozaveščanje in paradoksna teorija spremembe.",
+      "Jungovska simbolna interpretacija je lahko sama oblika moči, ki jo avtor kritizira pri drugih. Gestalt fenomenologija je tu doslednejša: ostaja pri izkušnji, ne pri pomenu od zunaj.",
+      "Avtorjevo 'bratstvo ranjenega zdravilca' se v gestalt jeziku prevede kot dialoška prisotnost: ne identifikacija s klientom, ampak inkluzija – zmožnost bivati v klientovem svetu, ne da bi zapustil svojega.",
+      "Sodobna gestalt terapija bi dodala dimenzijo družbene pravičnosti: moč v terapiji ni ločena od rasnih, spolnih, razrednih in kulturnih razmerij moči v širšem polju.",
+      "Paradoksna teorija spremembe ponuja alternativo moralnemu imperativu 'zavedaj se sence': namesto prizadevanja za zavedanje, polno sprejemanje tega, kar je – vključno z oblastjo."
+    ]
+  },
+  examApplication: {
+    title: "Uporaba gestalt kritike pri ustnem izpitu",
+    suggestions: [
+      "Pri vprašanju o kritičnem ovrednotenju knjige lahko uporabiš gestalt perspektivo kot enega od sodobnih okvirov, ki avtorja dopolnjuje.",
+      "Poudari, da gestalt ne zavrača avtorjeve teze, ampak jo poglobi: moč ni samo intrapsiična (senca), ampak tudi relacijska (polje) in strukturna (družba).",
+      "Uporabi konkretni gestalt jezik: kontaktna meja, ustvarjalna prilagoditev, paradoksna teorija spremembe, inkluzija, prisotnost, podpora samoregulaciji.",
+      "Pokaži, da poznaš razliko med fenomenološkim in interpretativnim pristopom: gestalt ostaja pri opisu izkušnje, Jung pri simbolni razlagi.",
+      "Če te vprašajo o alternativah avtorjevemu pristopu, lahko ponudiš gestalt dialoški model: moč se transformira v srečanju, ne v introspekciji.",
+      "Poveži z lastno prakso: kako v realnem času zaznaš moč v svojem telesu, tonu, drži – ne retroaktivno skozi mitološko refleksijo."
+    ]
+  },
+  keyTerms: [
+    ["Kontaktna meja", "Mesto srečanja organizma in okolja; v terapiji: prostor med terapevtom in klientom, kjer se moč, stik in prekinitev dogajajo."],
+    ["Teorija polja", "Vsak pojav (tudi moč) je emergentna lastnost celotnega polja, ne lastnost posameznika. Moč ni 'v' terapevtu, ampak 'med' obema in v kontekstu."],
+    ["Paradoksna teorija spremembe", "Sprememba nastane, ko se organizem popolnoma sprejme tak, kot je, ne ko si prizadeva biti drugačen. (Beisser, 1970)"],
+    ["Ustvarjalna prilagoditev", "Vsako vedenje – tudi 'senčno' – je bilo nekoč najboljši možni odgovor na dano situacijo. Ni patologija, ampak zamrznjen odgovor."],
+    ["Inkluzija", "Bubrov pojem: zmožnost doživeti svet iz perspektive drugega, ne da bi zapustil svojo. Gestalt alternativa jungovskemu 'bratstvu'."],
+    ["Prisotnost (presence)", "Terapevtova zmožnost biti v polnem stiku s sabo, klientom in poljem v danem trenutku – brez skrivanja za vlogo ali tehniko."],
+    ["Podpora samoregulaciji", "Gestalt zaupa organizmu: naloga terapevta ni 'zdraviti' ali 'interpretirati', ampak podpreti klientov lastni proces ozaveščanja in prilagajanja."],
+    ["Fenomenološka metoda", "Ostati pri tem, kar se kaže – pri čutnem, telesnem, neposrednem – namesto da izkušnjo dvigujemo na 'višjo' simbolno raven."],
+    ["Defleksija", "Kontaktna motnja: izogibanje neposrednemu stiku. Pri terapevtu: beg v teorijo, interpretacijo ali vlogo namesto v živ stik s klientom."],
+    ["Retroflekcija", "Kontaktna motnja: obrnitev impulza nazaj vase. Pri terapevtu: zadrževanje lastne ranljivosti, ki bi jo moral pokazati v polju."]
+  ]
+};

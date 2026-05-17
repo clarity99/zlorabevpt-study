@@ -393,6 +393,103 @@
       background: rgba(255, 255, 255, 0.5);
     }
 
+    .gestalt-intro {
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin: 0 0 20px;
+      background: #eff5f3;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .gestalt-section {
+      margin-bottom: 22px;
+    }
+
+    .gestalt-section h3 {
+      color: var(--accent-2);
+      font-size: 1.1rem;
+      margin: 0 0 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .gestalt-item {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      margin-bottom: 12px;
+    }
+
+    .gestalt-item summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      list-style: none;
+      font-weight: 650;
+    }
+
+    .gestalt-item summary::-webkit-details-marker { display: none; }
+
+    .gestalt-item .gestalt-body {
+      padding: 0 16px 16px;
+    }
+
+    .gestalt-item .gestalt-body p {
+      margin: 0 0 10px;
+    }
+
+    .gestalt-implication {
+      border-left: 3px solid var(--warn);
+      padding-left: 12px;
+      margin: 10px 0 0;
+      color: #5a4a20;
+      font-size: 0.95rem;
+    }
+
+    .gestalt-implication strong {
+      color: var(--warn);
+    }
+
+    .synthesis-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .synthesis-list li {
+      padding: 10px 14px;
+      border-left: 3px solid var(--accent);
+      margin-bottom: 8px;
+      background: #fbfaf5;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .term-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .term-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .term-card strong {
+      color: var(--accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .term-card span {
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+
     @media (max-width: 900px) {
       .app { grid-template-columns: 1fr; }
       .sidebar {
@@ -404,7 +501,8 @@
       .nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .grid,
       .grid-3,
-      .map-row { grid-template-columns: 1fr; }
+      .map-row,
+      .term-grid { grid-template-columns: 1fr; }
       .view-header { display: block; }
     }
 
@@ -430,6 +528,7 @@
         <button data-view="oral">Ustni izpit</button>
         <button data-view="clinical">Klinične povezave</button>
         <button data-view="schedule">9-dnevni načrt</button>
+        <button data-view="gestalt">Gestalt kritika</button>
       </nav>
       <div class="sidebar-block">
         <strong>Napredek kartic</strong>
@@ -534,6 +633,16 @@
           </div>
         </div>
         <div class="grid-3" id="scheduleGrid"></div>
+      </section>
+
+      <section id="gestalt" class="view">
+        <div class="view-header">
+          <div>
+            <h2>Gestalt kritika</h2>
+            <p class="lede">Kritično ovrednotenje knjige iz perspektive sodobne gestalt psihoterapije: fenomenologija polja, dialoški princip, paradoksna teorija spremembe.</p>
+          </div>
+        </div>
+        <div id="gestaltContent"></div>
       </section>
     </main>
   </div>
@@ -810,6 +919,49 @@
       if (event.key === "ArrowLeft") moveCard(-1);
     });
 
+    function renderGestalt() {
+      const g = data.gestaltCritique;
+      if (!g) return;
+      let html = `<p class="gestalt-intro">${escapeHtml(g.intro)}</p>`;
+
+      html += `<div class="gestalt-section"><h3>Kaj avtor naredi dobro (gestalt perspektiva)</h3>`;
+      html += g.strengths.map((s) => `
+        <details class="gestalt-item">
+          <summary>${escapeHtml(s.title)}</summary>
+          <div class="gestalt-body"><p>${escapeHtml(s.text)}</p></div>
+        </details>
+      `).join("");
+      html += `</div>`;
+
+      html += `<div class="gestalt-section"><h3>Kritične točke</h3>`;
+      html += g.critiques.map((c) => `
+        <details class="gestalt-item">
+          <summary>${escapeHtml(c.title)}</summary>
+          <div class="gestalt-body">
+            <p>${escapeHtml(c.text)}</p>
+            <div class="gestalt-implication"><strong>Posledice za prakso: </strong>${escapeHtml(c.implications)}</div>
+          </div>
+        </details>
+      `).join("");
+      html += `</div>`;
+
+      html += `<div class="gestalt-section"><h3>${escapeHtml(g.synthesis.title)}</h3>`;
+      html += `<ul class="synthesis-list">${g.synthesis.points.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>`;
+      html += `</div>`;
+
+      html += `<div class="gestalt-section"><h3>${escapeHtml(g.examApplication.title)}</h3>`;
+      html += `<ul class="synthesis-list">${g.examApplication.suggestions.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`;
+      html += `</div>`;
+
+      html += `<div class="gestalt-section"><h3>Ključni gestalt pojmi</h3>`;
+      html += `<div class="term-grid">${g.keyTerms.map(([term, def]) => `
+        <div class="term-card"><strong>${escapeHtml(term)}</strong><span>${escapeHtml(def)}</span></div>
+      `).join("")}</div>`;
+      html += `</div>`;
+
+      document.getElementById("gestaltContent").innerHTML = html;
+    }
+
     renderOverview();
     renderChapters();
     setupTags();
@@ -817,6 +969,7 @@
     renderOral();
     renderClinical();
     renderSchedule();
+    renderGestalt();
     renderProgress();
     updateTimer();
   </script>
