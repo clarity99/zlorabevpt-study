@@ -18,7 +18,7 @@ Enominutni uvod za izpit:
 - Poklicna senca: Socialni delaveč lahko postane inkvizitor, psihoterapevt šarlatan ali lažni prerok, zdravnik tiran, učitelj sovražnik otroškosti.
 - Odnos: Terapija ni tehnika med objektom in ekspertom. Odnos vsebuje fantazijo, telo, eros, sovraštvo, projekcije in realno srečanje.
 - Arhetip: Zdravilec in pacient sta pola istega arhetipa. Če se razcepita, se poskus ponovne združitve pogosto zgodi skozi moč.
-- Izhod: Zrel pomagajoči strokovnjak ne odpravi zla, ampak se uči živeti z njim zavestno: prek supervizije, ljubezenskih/prijateljskih odnosov, negotovosti in ranljivosti.
+- Izhod: Zrel pomagajoči strokovnjak ne odpravi zla, ampak se uči živeti z njim zavestno. Avtor zavrne supervizijo, re-analizo in introspekcijo kot nezadostne; edini izhod vidi v erosu – neanalitičnih odnosih (prijateljstvo, partnerstvo, otroci), ki terapevta pretresejo od zunaj.
 
 ## Poglavja
 
@@ -631,7 +631,7 @@ Teza: Analiza je ogrožena prav s svojo uspešnostjo: lahko zmanjša simptome, h
 
 Ta del knjige obrne kritiko nazaj na analizo kot metodo. Avtor ne trdi preprosto, da analiza ne deluje. Bolj nevarna teza je, da lahko analiza deluje na ravni simptomov, hkrati pa odpove na ravni individuacije, živosti in odnosa do sence. Pacient je lahko manj nevrotičen, a tudi manj živ.
 
-Psihoterapevtova izolacija je posebna poklicna nevarnost. Pacienti so v asimetričnem odnosu in terapevta težko zares izzovejo. Kolegi in supervizorji lahko pomagajo, vendar se lahko tudi sami ujamejo v isto strokovno govorico, iste obrambe in isto potrebo po ohranjanju terapevtske avtoritete.
+Psihoterapevtova izolacija je posebna poklicna nevarnost. Pacienti so v asimetričnem odnosu in terapevta težko zares izzovejo. Avtor sistematično zavrne vse analitične rešitve: supervizija, re-analiza, kolegiale diskusije in terapevtske skupine – vse so ujete v isti sistem, ker supervizor, kolega in skupina delujejo z istim analitičnim orodjem, ki je del problema.
 
 Analitično znanje je dvorezno. Drugim lahko pomaga k samorefleksiji, terapevtu pa lahko služi kot sofisticirana obramba. Vse, kar ga ogrozi, lahko interpretira: umetnost, religijo, ljubezen, kritiko, pacientov upor ali partnerjevo pripombo. Tako postane nedotakljiv.
 
@@ -651,12 +651,12 @@ Pri 'Analiza ne pomaga' so tvoje opombe posebej uporabne glede izolacije. Najve�
 
 Pomembna je tudi asimetrija. Jung poudarja vzajemnost procesa, vendar analiza ostaja nesimetrično razmerje, še posebej pri starejšem in izkušenem analitiku. Pacient razkrije sebe, analitik pa lahko ostane nedotaknjen. Pravi ranjeni zdravitelj ostaja sam svoj pacient: ne analizira samo pacienta, ampak dopušča, da pacientova problematika konstelira tudi njegovo lastno senco.
 
-Tvoje vprašanje o superviziji je dobro ohraniti kot odprto klinično vprašanje. Avtor je skeptičen do stalnega nadzornega analitika in do kolegialnih skupin, ker se v njih lahko pojavljata tekmovalnost in samopredstavitev. Toda njegovo bistvo ni proti superviziji kot taki; išče načine, kako analitika vedno znova prevetriti, prizadeti in povečati njegovo sposobnost spoznavanja.
+Tvoje vprašanje o superviziji je dobro ohraniti kot odprto klinično vprašanje. Avtor je več kot samo skeptičen: izrecno zavrne re-analizo, kontrolno analizo, kolegiale diskusije in terapevtske skupine analitikov kot nezadostne. Primerja jih z baronom Münchhausnom, ki se poskuša rešiti iz močvirja tako, da se potegne za lastno kito. Njegova rešitev ni izboljšana supervizija, ampak eros – neanalitični odnosi, ki terapevta pretresejo od zunaj.
 
 #### Ključno
 
 - Terapevt je poklicno izoliran; pacienti ga pogosto ne morejo zares izzvati.
-- Supervizija in trening pomagata, a lahko postaneta del istega sistema samozaščite.
+- Avtor izrecno zavrne supervizijo, re-analizo, samoanalizo sanj in kolegiale diskusije kot nezadostne rešitve – vse so del istega analitičnega sistema, ki ga je treba prebiti.
 - Analiza lahko ne pomaga, če sluzi obrambi pred življenjem in individuiranjem.
 - Terapevtova psihološka govorica lahko postane sofisticiran ego-obrambni sistem.
 
@@ -675,7 +675,7 @@ Tvoje vprašanje o superviziji je dobro ohraniti kot odprto klinično vprašanje
 
 #### Klinični most
 
-- Povezi s potrebo po superviziji, intervisiji in odnosih, kjer terapevt ni v vlogi terapevta.
+- Povezi z avtorjevo rešitvijo: ne supervizija ali re-analiza, ampak odnosi (prijateljstvo, partnerstvo, otroci), kjer terapevt ni v vlogi terapevta in ga lahko pretresejo.
 - Za izpit poudari paradoks: orodje, ki pomaga drugim, lahko terapevta samega zapre.
 
 ### Eros, Individuation, The Helpless Psychotherapist, Eros Again (vrstice 1839-2048)

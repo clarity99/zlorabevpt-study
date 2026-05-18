@@ -14,7 +14,7 @@ window.STUDY_DATA = {
       ["Poklicna senca", "Socialni delaveč lahko postane inkvizitor, psihoterapevt šarlatan ali lažni prerok, zdravnik tiran, učitelj sovražnik otroškosti."],
       ["Odnos", "Terapija ni tehnika med objektom in ekspertom. Odnos vsebuje fantazijo, telo, eros, sovraštvo, projekcije in realno srečanje."],
       ["Arhetip", "Zdravilec in pacient sta pola istega arhetipa. Če se razcepita, se poskus ponovne združitve pogosto zgodi skozi moč."],
-      ["Izhod", "Zrel pomagajoči strokovnjak ne odpravi zla, ampak se uči živeti z njim zavestno: prek supervizije, ljubezenskih/prijateljskih odnosov, negotovosti in ranljivosti."]
+      ["Izhod", "Zrel pomagajoči strokovnjak ne odpravi zla, ampak se uči živeti z njim zavestno. Avtor zavrne supervizijo, re-analizo in introspekcijo kot nezadostne; edini izhod vidi v erosu – neanalitičnih odnosih (prijateljstvo, partnerstvo, otroci), ki terapevta pretresejo od zunaj."]
     ],
     oralOpening: "Če bi moral knjigo povzeti v eni minuti, bi rekel: avtor opozarja, da pomaganje ni nasprotje moči, ampak ena izmed njenih najnevarnejših oblik, ker je moralno upravičena. Zato mora psihoterapevt svojo željo pomagati vedno brati skupaj z njeno senco: potrebo po nadzoru, po posebnem znanju, po tem, da je nepogrešljiv."
   },
@@ -319,7 +319,7 @@ window.STUDY_DATA = {
       thesis: "Analiza je ogrožena prav s svojo uspešnostjo: lahko zmanjša simptome, hkrati pa utrdi terapevtovo izolacijo, tehnično nadmoč in pacientovo odvisnost.",
       points: [
         "Terapevt je poklicno izoliran; pacienti ga pogosto ne morejo zares izzvati.",
-        "Supervizija in trening pomagata, a lahko postaneta del istega sistema samozaščite.",
+        "Avtor izrecno zavrne supervizijo, re-analizo, samoanalizo sanj in kolegiale diskusije kot nezadostne rešitve – vse so del istega analitičnega sistema, ki ga je treba prebiti.",
         "Analiza lahko ne pomaga, če sluzi obrambi pred življenjem in individuiranjem.",
         "Terapevtova psihološka govorica lahko postane sofisticiran ego-obrambni sistem."
       ],
@@ -330,7 +330,7 @@ window.STUDY_DATA = {
         "Zakaj pacient ne more vedno popraviti terapevtove sence?"
       ],
       clinical: [
-        "Povezi s potrebo po superviziji, intervisiji in odnosih, kjer terapevt ni v vlogi terapevta.",
+        "Povezi z avtorjevo rešitvijo: ne supervizija ali re-analiza, ampak odnosi (prijateljstvo, partnerstvo, otroci), kjer terapevt ni v vlogi terapevta in ga lahko pretresejo.",
         "Za izpit poudari paradoks: orodje, ki pomaga drugim, lahko terapevta samega zapre."
       ]
     },
@@ -381,16 +381,16 @@ window.STUDY_DATA = {
     ["def-homophobia", "Kaj je destruktivni strah pred homoseksualnostjo?", "Strah, ki telesno bližino med osebama istega spola takoj patologizira in s tem osiromaši eros v odnosu.", "definicija,eros"],
     ["def-flattery", "Zakaj je laskanje v analizi nevarno?", "Ker je podobno legitimnemu prepoznavanju vrednosti, a v resnici hrani pacientovo in terapevtovo narcistično koalicijo.", "definicija,laskanje"],
     ["clinical-flattery", "Kako ločiti podporo od laskanja?", "Podpora poveča resnico, odgovornost in svobodo. Laskanje poveča idealizacijo, odvisnost in skupno samozadovoljstvo.", "klinika,laskanje"],
-    ["def-wounded-healer", "Kaj pomeni arhetip ranjenega zdravilca?", "V pacientu obstaja notranji zdravilec, v zdravniku/terapevtu pa notranji pacient. Zdravljenje uspeva, ko sta oba pola dovolj zavestna.", "definicija,arhetip"],
+    ["def-wounded-healer", "Kaj pomeni arhetip ranjenega zdravilca?", "V pacientu obstaja notranji zdravilec, v zdravniku/terapevtu pa notranji pacient. Zdravljenje uspeva, ko arhetip ni razcepljen – ko terapevt nosi tudi lastno ranljivost, namesto da jo projicira v pacienta.", "definicija,arhetip"],
     ["contrast-healer-patient", "Ranjen zdravilec vs. močan zdravnik.", "Ranjen zdravilec nosi tudi lastno ranljivost in konstelira pacientovo zdravilno moč. Močan zdravnik projicira ranjenost v pacienta in zdravi iz nadmoči.", "kontrast,arhetip"],
     ["def-split-archetype", "Kaj je razcep arhetipa?", "Ko ego ne prenese polaritete, en pol izrine in projicira v drugega. Odnos se potem poskuša umetno zapreti skozi moč.", "definicija,arhetip"],
     ["clinical-client-passivity", "Kako pacient preda notranjega zdravilca?", "Ko pričakuje, da bo terapevt vedel, odločal in nosil spremembo namesto njega. Terapevt mora vrniti agens pacientu.", "klinika,arhetip"],
     ["contrast-health-individuation", "Duševno zdravje vs. individuacija.", "Duševno zdravje lahko pomeni manj simptomov in dobro prilagoditev. Individuacija pomeni globlje soočenje s senco, smrtjo, smislom, svobodo in celovitostjo.", "kontrast,individuacija"],
     ["risk-analyst-inflation", "Kaj je inflacija analitika glede individuacije?", "Prepričanje, da je analiza posebna ali edina pot k rešitvi človeka in da je analitik specialist za smisel ali odrešitev.", "tveganje,individuacija"],
     ["def-eros", "Kaj je eros v zaključku knjige?", "Široka ljubezenska in življenjska vpletenost: prijateljstvo, partnerstvo, družina, umetnost, religiozno ali eksistencialno doživetje, ki terapevta lahko pretrese.", "definicija,eros"],
-    ["oral-ending", "Kako bi zaključil ustni odgovor o knjigi?", "Avtor ne zahteva manj strokovnosti, ampak več zavesti o moči. Terapevt ostane etičen, ko zna reči 'ne vem', ko ima odnose zunaj terapevtske oblasti in ko svoje sence ne projicira v pacienta.", "ustni,zaključek"],
-    ["risk-isolation", "Zakaj je izolacija prekletstvo psihoterapevta?", "Ker pacienti terapevta težko enakovredno izzovejo, stroka pa lahko njegove obrambe celo okrepi. Zato potrebuje odnose, kjer ni gospodar interpretacije.", "tveganje,praksa"],
-    ["clinical-supervision", "Kaj bi bila guggenbuhl-craigovska supervizijska vprašanja?", "Kje hočem imeti prav? Kje pacientu jemljem agens? Kje me hrani njegova odvisnost? Kje mojo interpretacijo vodi moj strah, eros, dolgčas ali potreba po moči?", "klinika,supervizija"],
+    ["oral-ending", "Kako bi zaključil ustni odgovor o knjigi?", "Avtor zavrne supervizijo, re-analizo in introspekcijo kot nezadostne – analitično orodje ne more popraviti analitika. Edini izhod vidi v erosu: prijateljstvu, partnerstvu in odnosih, kjer terapevt ni ekspert, kjer ga lahko pretresejo in kjer mora iz 'jaz vem' preiti v sokratsko 'ne vem'.", "ustni,zaključek"],
+    ["risk-isolation", "Zakaj je izolacija prekletstvo psihoterapevta?", "Ker pacienti terapevta težko enakovredno izzovejo, stroka pa lahko njegove obrambe celo okrepi. Avtor zavrne supervizijo in re-analizo kot nezadostne – edini izhod vidi v erosu: prijateljstvu in odnosih, kjer terapevt ni gospodar interpretacije.", "tveganje,praksa"],
+    ["clinical-supervision", "Katera vprašanja izhajajo iz knjige za samorefleksijo (čeprav avtor sam zavrne introspekcijo kot nezadostno)?", "Kje hočem imeti prav? Kje pacientu jemljem agens? Kje me hrani njegova odvisnost? Kje mojo interpretacijo vodi moj strah, eros, dolgčas ali potreba po moči? Avtor bi dodal: ali imam odnose zunaj terapije, ki me lahko pretresejo?", "klinika,samorefleksija"],
     ["contrast-eros-power", "Eros vs. moč.", "Eros odpira odnos in tvega ranljivost. Moč zapira odnos, ureja drugega od zgoraj in zmanjša negotovost strokovnjaka.", "kontrast,eros"],
     ["exam-social", "Model odgovora: socialno delo in inkvizicija.", "Začni z analogijo dobrega namena, nadaljuj z vrednotami normalnosti, dodaj problem prisile in zaključi s power shadow: največja krutost se pojavi, ko se lahko legitimira kot dobro.", "ustni,socialno-delo"],
     ["exam-wounded", "Model odgovora: ranjeni zdravilec.", "Pojasni pola arhetipa, projekcijo notranjega zdravilca in notranjega pacienta, zapiranje razcepa skozi moč ter klinično posledico: terapevt pomaga, ko ostaja brat in ne gospodar.", "ustni,arhetip"],
@@ -400,7 +400,7 @@ window.STUDY_DATA = {
   oralQuestions: [
     {
       q: "Predstavi osrednjo tezo knjige in jo povezi s psihoterapevtsko etiko.",
-      outline: "Pomoč vsebuje moč; dobra namera ni dovolj; poklicna senca je strukturna; etika zahteva zavestno omejevanje moči, supervizijo, meje in priznanje lastne ranljivosti."
+      outline: "Pomoč vsebuje moč; dobra namera ni dovolj; poklicna senca je strukturna; avtor zavrne supervizijo in introspekcijo kot nezadostne – edini izhod vidi v erosu: neanalitičnih odnosih, ki terapevta pretresejo in mu vrnejo ranljivost."
     },
     {
       q: "Razloži pojem 'power shadow' na primeru socialnega dela ali psihoterapije.",
@@ -450,7 +450,7 @@ window.STUDY_DATA = {
     ["6", "Neuspeh analize in individuacija", "Poglavja Failure, Eros/Individuation. 30 min ustnih vprašanj. 20 min težke kartice.", "Znaš razlikovati duševno zdravje in individuacijo."],
     ["7", "Simulacija izpita I", "Izberi 5 ustnih vprašanj. Govori 4 minute na vsako. Po vsakem popravi strukturo odgovora. Ponovi težke kartice.", "Odgovori imajo uvod, 3 točke, klinični primer in zaključek."],
     ["8", "Simulacija izpita II", "Delaj samo šibke teme. 30 min kartic označenih kot težke. 40 min glasnega odgovarjanja. 20 min kliničnih povezav.", "Znaš prehajati iz teorije v prakso brez izgube pojmov."],
-    ["9", "Zadnji pregled", "Preberi pregled knjige, 9 modelnih odgovorov in zaključne kartice. Ne širi snovi. Vadi miren 2-minutni zaključek.", "Na izpitu lahko začnes z glavno tezo in zaključis z erosom, ranljivostjo in omejevanjem moči."]
+    ["9", "Zadnji pregled", "Preberi pregled knjige, 9 modelnih odgovorov in zaključne kartice. Ne širi snovi. Vadi miren 2-minutni zaključek.", "Na izpitu lahko začnes z glavno tezo in zaključis z erosom kot edinim izhodom – analitično orodje ne more popraviti analitika, samo neanalitični odnosi ga lahko pretresejo."]
   ]
 };
 
@@ -533,7 +533,7 @@ window.STUDY_DATA.chapterDeepDives = {
   ],
   failure: [
     "Ta del knjige obrne kritiko nazaj na analizo kot metodo. Avtor ne trdi preprosto, da analiza ne deluje. Bolj nevarna teza je, da lahko analiza deluje na ravni simptomov, hkrati pa odpove na ravni individuacije, živosti in odnosa do sence. Pacient je lahko manj nevrotičen, a tudi manj živ.",
-    "Psihoterapevtova izolacija je posebna poklicna nevarnost. Pacienti so v asimetričnem odnosu in terapevta težko zares izzovejo. Kolegi in supervizorji lahko pomagajo, vendar se lahko tudi sami ujamejo v isto strokovno govorico, iste obrambe in isto potrebo po ohranjanju terapevtske avtoritete.",
+    "Psihoterapevtova izolacija je posebna poklicna nevarnost. Pacienti so v asimetričnem odnosu in terapevta težko zares izzovejo. Avtor sistematično zavrne vse analitične rešitve: supervizija, re-analiza, kolegiale diskusije in terapevtske skupine – vse so ujete v isti sistem, ker supervizor, kolega in skupina delujejo z istim analitičnim orodjem, ki je del problema.",
     "Analitično znanje je dvorezno. Drugim lahko pomaga k samorefleksiji, terapevtu pa lahko služi kot sofisticirana obramba. Vse, kar ga ogrozi, lahko interpretira: umetnost, religijo, ljubezen, kritiko, pacientov upor ali partnerjevo pripombo. Tako postane nedotakljiv.",
     "Za ustni izpit je pomembno poudariti paradoks: terapevt je ogrožen prav z orodjem, ki ga profesionalno dela močnega. Analiza lahko postane pot zavesti ali pa zaprt sistem, ki preprečuje, da bi bil terapevt resnično pretresen."
   ],
@@ -612,7 +612,7 @@ window.STUDY_DATA.userNotes = {
     "V težkem položaju psihoterapevta se združijo trije razcepi: zdravnik projicira bolezen v pacienta, terapevt projicira nezavedno v pacienta, šarlatan in lažni prerok pa se prebudita tam, kjer se terapevt neupravičeno doživlja kot zelo zavesten. To dobro razloži, zakaj je slika knjige tako črna, čeprav avtor kasneje prizna, da namenoma poudarja nevarnosti.",
     "Pri 'Analiza ne pomaga' so tvoje opombe posebej uporabne glede izolacije. Največje prekletstvo psihoterapevta je, da je pri delu nazadnje sam: samo on in pacient vesta, kaj se uro za uro dogaja. Supervizor lahko pomaga, vendar ne more v celoti razumeti procesa, ker pacientove sanje in odzivi lahko nosijo sporočila tudi za analitika, ne za zunanjega opazovalca.",
     "Pomembna je tudi asimetrija. Jung poudarja vzajemnost procesa, vendar analiza ostaja nesimetrično razmerje, še posebej pri starejšem in izkušenem analitiku. Pacient razkrije sebe, analitik pa lahko ostane nedotaknjen. Pravi ranjeni zdravitelj ostaja sam svoj pacient: ne analizira samo pacienta, ampak dopušča, da pacientova problematika konstelira tudi njegovo lastno senco.",
-    "Tvoje vprašanje o superviziji je dobro ohraniti kot odprto klinično vprašanje. Avtor je skeptičen do stalnega nadzornega analitika in do kolegialnih skupin, ker se v njih lahko pojavljata tekmovalnost in samopredstavitev. Toda njegovo bistvo ni proti superviziji kot taki; išče načine, kako analitika vedno znova prevetriti, prizadeti in povečati njegovo sposobnost spoznavanja."
+    "Tvoje vprašanje o superviziji je dobro ohraniti kot odprto klinično vprašanje. Avtor je več kot samo skeptičen: izrecno zavrne re-analizo, kontrolno analizo, kolegiale diskusije in terapevtske skupine analitikov kot nezadostne. Primerja jih z baronom Münchhausnom, ki se poskuša rešiti iz močvirja tako, da se potegne za lastno kito. Njegova rešitev ni izboljšana supervizija, ampak eros – neanalitični odnosi, ki terapevta pretresejo od zunaj."
   ],
   "eros-individuation": [
     "Tvoje nove opombe k erosu poudarijo, da terapevta lahko reši samo nekaj, kar ga neanalitično vrže iz ravnotežja. Potrebuje izpostavljenost nečemu, kar ga globoko prizadene in mu znova pokaže, da je omejen, domišljav, smešen, ranljiv in človeški. To je neposreden odgovor na izolacijo in strokovno samozadostnost.",
@@ -658,7 +658,7 @@ window.STUDY_DATA.gestaltCritique = {
     {
       title: "Individualistična epistemologija: senca kot intrapsiični pojav",
       text: "Avtor moč razume pretežno kot problem posameznika – terapevtove nezavedne sence. Gestalt teorija polja (Lewin, Parlett, Spagnuolo Lobb) pa moč razume kot emergentno lastnost polja: moč ni nekaj, kar terapevt 'ima' in projicira, ampak se oblikuje med obema akteroma in v širšem institucionalnem, kulturnem in družbenem kontekstu. To pomeni, da problem moči ni rešljiv samo z introspekeijo terapevta (zavedanje lastne sence), ampak zahteva analizo celotnega polja: institucije, diagnostičnega sistema, kulturnih norm, ekonomskih razmerij, rasnih in spolnih dinamik.",
-      implications: "Gestalt kritika zato presega avtorjevo rešitev (supervizija + zavedanje sence + eros) in zahteva tudi strukturne odgovore: demokratizacijo terapevtskega odnosa, klientovo soglasje kot živ proces, transparentnost o moči, kritično refleksijo institucionalnih okvirov in aktivno delo na družbeni pravičnosti znotraj terapevtskega polja."
+      implications: "Gestalt kritika zato presega avtorjevo rešitev (eros – neanalitični odnosi, ki terapevta pretresejo od zunaj) in zahteva tudi strukturne odgovore: demokratizacijo terapevtskega odnosa, klientovo soglasje kot živ proces, transparentnost o moči, kritično refleksijo institucionalnih okvirov in aktivno delo na družbeni pravičnosti znotraj terapevtskega polja. Avtor sam zavrne supervizijo, re-analizo in skupinsko diskusijo kot nezadostne, a gestalt kritika gre dlje: tudi eros kot zunanji korektiv ne zadošča, če ne spremenimo strukture polja."
     },
     {
       title: "Odsotnost koncepta kontaktnih motenj pri opisu zlorabe",
@@ -667,12 +667,12 @@ window.STUDY_DATA.gestaltCritique = {
     },
     {
       title: "Paradoksna teorija spremembe vs. 'zavedanje sence'",
-      text: "Guggenbuhl-Craig predlaga, da se terapevt zave svoje sence – torej tistega, kar potlačuje. To je blizu gestalt razumevanju, a gestalt paradoksna teorija spremembe (Beisser, 1970) gre dalje: sprememba ne nastane z zavestnim prizadevanjem, ampak s polnim sprejemanjem tistega, kar je. Terapevt se ne 'zave sence' kot predmeta, ampak se dovoli biti to, kar je – vključno z oblastnim, šarlatanskim, lenobnim ali sadističnim delom. Gestalt ne zahteva 'premagovanja' sence, ampak polno kontaktiranje z njo brez prisilnega spreminjanja.",
-      implications: "Razlika je subtilna, a pomembna: avtorjev pristop ima rahel prizvok moralnega prizadevanja ('moraš vedeti za svojo senco'). Gestalt paradoks pa pravi: prav v trenutku, ko se terapevt popolnoma sprejme kot oblastnega, se oblast paradoksno zmanjša. Moralni imperativ 'bodi zavesten' lahko sam postane nova oblika narcistične kontrole."
+      text: "Guggenbuhl-Craig sicer zahteva, da terapevt ostane odprt za lastno senco, a sam priznava, da zavedanje sence kot intrapsiični projekt ne deluje: terapevt svoje sanje interpretira po lastnih željah, senco prepozna samo, ko ustreza egu, in jo lahko celo napačno razloži kot svetlo stran. Avtor zato samorefleksijo zavrne kot rešitev in predlaga eros – neanalitične odnose, ki terapevta pretresejo od zunaj. Gestalt paradoksna teorija spremembe (Beisser, 1970) gre v drugo smer: sprememba ne nastane niti z analitičnim prizadevanjem niti z zunanjim pretresom, ampak s polnim sprejemanjem tistega, kar je. Terapevt se ne 'zave sence' kot predmeta in ne čaka, da ga prijatelji pretresejo, ampak se dovoli biti to, kar je – vključno z oblastnim, šarlatanskim, lenobnim ali sadističnim delom.",
+      implications: "Razlika je subtilna, a pomembna: avtor zavrne introspekcijo, a jo nadomesti z drugim zunanjim sredstvom (eros, prijateljstvo). Gestalt paradoks pa pravi: prav v trenutku, ko se terapevt popolnoma sprejme kot oblastnega, se oblast paradoksno zmanjša – brez da bi to moral doseči od zunaj ali od znotraj. Avtorjeva dilema (analiza ne pomaga, torej potrebuješ nekaj zunanjega) se v gestalt perspektivi razreši drugače: ne gre za vir spremembe (notranji ali zunanji), ampak za kvaliteto stika s tem, kar je."
     },
     {
       title: "Pomanjkanje dialoškega principa",
-      text: "Knjiga skoraj ne omenja dialoga v Bubrovem smislu (Ich-Du), ki je za sodobno gestalt terapijo konstitutiven. Avtorjeva rešitev je individualna: terapevt naj se zave lastne sence, naj ima odnose zunaj terapije, naj ohrani eros. Toda gestalt relacijska tradicija (Hycner, Jacobs, Yontef) poudarja, da se moč transformira šele v dialogu – v resnično vzajemnem srečanju, kjer oba udeleženca tvegata. Avtor sicer omeni 'bratstvo' ranjenega zdravilca, a ne razvije pojma dialoškega srečanja kot terapevtske prakse.",
+      text: "Knjiga skoraj ne omenja dialoga v Bubrovem smislu (Ich-Du), ki je za sodobno gestalt terapijo konstitutiven. Avtorjeva rešitev je eros – neanalitični odnosi (prijateljstvo, partnerstvo, otroci), ki terapevta pretresejo od zunaj. Avtor izrecno zavrne supervizijo, re-analizo in kolegiale diskusije kot nezadostne. Toda tudi eros, kot ga razume avtor, ostaja zunaj terapevtskega odnosa: terapevta rešijo prijatelji in družina, ne pa klient. Gestalt relacijska tradicija (Hycner, Jacobs, Yontef) pa poudarja, da se moč transformira šele v dialogu znotraj terapije – v resnično vzajemnem srečanju, kjer oba udeleženca tvegata. Avtor sicer omeni 'bratstvo' ranjenega zdravilca, a ne razvije pojma dialoškega srečanja kot terapevtske prakse.",
       implications: "Gestalt bi dodal: transformacija moči se ne zgodi v terapevtovi glavi (zavedanje), ampak med terapevtom in klientom – v trenutkih, ko se terapevt pusti presenetiti, ko dopusti, da klient vpliva nanj, ko potrdi klientovo izkušnjo brez da bi jo interpretiral. Inkluzija (Buber) – sposobnost doživeti svet iz klientove perspektive, ne da bi zapustil svojo – je gestalt odgovor na problem moči."
     },
     {
@@ -687,13 +687,13 @@ window.STUDY_DATA.gestaltCritique = {
     },
     {
       title: "Koncept ustvarjalne prilagoditve vs. patologizacija 'sence'",
-      text: "Avtor ohranja jungovsko razumevanje sence kot nečesa temnega, potlačenega, nevarnega – česar se moramo 'zavedati', da nas ne prevlada. Gestalt perspektiva pa bi 'senčne' impulze – željo po moči, sadistično zadovoljstvo, narcistično potrebo – razumela kot ustvarjalne prilagoditve, ki so imele funkcijo v določenem polju. Terapevtova 'oblast' ni zlo, ampak nekdanji način preživetja (morda v družini, v izobraževalnem sistemu, v poklicni socializaciji), ki se je zamrznil in postal rigiden.",
-      implications: "To ne pomeni opravičevanja zlorabe. Pomeni drugačno terapevtsko držo do lastnih 'senčnih' impulzov: namesto moralnega boja s senco (zavedaj se! omeji se!) gestalt predlaga radovednost, empatijo do lastne rigidnosti in eksperiment z novimi oblikami stika. Rigidna oblika stika se ne raztopi z moralno voljo, ampak s podporo in varnostjo za nov eksperiment."
+      text: "Avtor ohranja jungovsko razumevanje sence kot nečesa temnega, potlačenega, nevarnega. Sam sicer prizna, da introspekcija ne deluje (terapevt se zave sence samo, ko ustreza egu), a senco še vedno razume kot grožnjo, ki jo mora razkriti eros – zunanji pretres. Gestalt perspektiva pa bi 'senčne' impulze – željo po moči, sadistično zadovoljstvo, narcistično potrebo – razumela kot ustvarjalne prilagoditve, ki so imele funkcijo v določenem polju. Terapevtova 'oblast' ni zlo ali grožnja, ampak nekdanji način preživetja (morda v družini, v izobraževalnem sistemu, v poklicni socializaciji), ki se je zamrznil in postal rigiden.",
+      implications: "To ne pomeni opravičevanja zlorabe. Pomeni drugačno terapevtsko držo do lastnih 'senčnih' impulzov: namesto boja s senco (bodisi z introspekcijo, ki jo avtor zavrne, bodisi z erosom, ki jo od zunaj razkrije) gestalt predlaga radovednost, empatijo do lastne rigidnosti in eksperiment z novimi oblikami stika. Rigidna oblika stika se ne raztopi niti z moralno voljo niti z zunanjim pretresom, ampak s podporo in varnostjo za nov eksperiment."
     },
     {
       title: "Odsotnost situacijskega in družbenega konteksta moči",
       text: "Avtor obravnava moč skoraj izključno kot intrapsiični in medosebni pojav. Sodobna gestalt terapija – posebej kritična gestalt tradicija (Philippson, Bloom, Roubal) – poudarja, da moč v terapiji ni ločena od širših družbenih razmerij moči: rasizma, seksizma, heteronormativnosti, razrednih razlik, ableizma. Terapevtov 'power shadow' ni samo osebna senca, ampak tudi utelešenje strukturnega nasilja, ki ga terapevt nosi kot beli, moški, heteroseksualni, izobraženi strokovnjak.",
-      implications: "Sodobna gestalt kritika bi zato avtorju očitala, da ostaja pri individualno-psihološki razlagi moči in ne vidi njene strukturne razsežnosti. Supervizija ni dovolj, če ne vključuje kritične refleksije o terapevtovem družbenem položaju in privilegijih. To je pomembna dopolnitev za sodobni izpit."
+      implications: "Sodobna gestalt kritika bi zato avtorju očitala, da ostaja pri individualno-psihološki razlagi moči in ne vidi njene strukturne razsežnosti. Avtor sam zavrne supervizijo kot rešitev, a tudi njegov eros ostaja v polju osebnih odnosov – ne sega v institucionalne, kulturne in družbene strukture moči. To je pomembna dopolnitev za sodobni izpit."
     },
     {
       title: "Enostranska fokusiranost na terapevta – klientov agens",
@@ -703,16 +703,16 @@ window.STUDY_DATA.gestaltCritique = {
     {
       title: "Philippsonova kritika: enooblastna terapija vs. dvooblastna gestalt terapija",
       text: "Peter Philippson (2020) v članku 'One-Power and Two-Power Therapy' ponudi neposredno gestalt kritiko, ki zadene jedro Guggenbuhl-Craigove knjige. Philippson loči enooblastne (one-power) in dvooblastne (two-power) terapevtske odnose. V enooblastnem odnosu ima moč vedno samo ena oseba: ali terapevt 'opolnomoči' klienta (Rogers, Kohut), ali ga vodi v boljše načine razmišljanja (KVT, hipnoterapija). Guggenbuhl-Craig opisuje prav ta problem – a Philippson pokaže, da je večina psihoterapij, vključno z avtorjevo jungovsko tradicijo, strukturno enooblastna. Izvirna gestalt terapija pa je bila zasnovana kot dvooblastni odnos: oba, terapevt in klient, sta močna, prisotna in aktivna, oba prispevata k težkemu skupnemu delu iskanja stika. V dvooblastnem odnosu klient ni prejemnik pomoči, ampak soudeležen v polju, kjer oba tvegata.",
-      implications: "Philippsonova kritika je za izpit izjemno uporabna, ker pokaže, da Guggenbuhl-Craigov problem ni rešljiv z boljšo samorefleksijo znotraj enooblastnega modela. Rešitev zahteva strukturno spremembo odnosa: prehod v dvooblastno terapijo, kjer terapevt ne more biti niti rešitelj niti čarovnik, ker klient ni v šibkejši poziciji. To je radikalnejša kritika od avtorjeve: avtor ostaja pri samorefleksiji v okviru enooblastnega odnosa, Philippson pa trdi, da je treba spremeniti sam okvir."
+      implications: "Philippsonova kritika je za izpit izjemno uporabna, ker pokaže, da Guggenbuhl-Craigov problem ni rešljiv z zunanjim korektivom (erosom zunaj terapije), ki ga avtor predlaga. Avtor sam pravilno zavrne supervizijo in introspekcijo, a njegova rešitev – prijateljstvo in ljubezen zunaj analitičnega okvira – ne spremeni strukture terapevtskega odnosa. Philippson trdi, da je treba spremeniti sam okvir: prehod v dvooblastno terapijo, kjer terapevt ne more biti niti rešitelj niti čarovnik, ker klient ni v šibkejši poziciji."
     },
     {
       title: "Enooblastni vzorci iz družine – slepa pega terapevtov in avtorja",
       text: "Philippson izpostavi, da terapevti pogosto prihajajo iz enooblastnih družin – kjer so morali skrbeti za starše, reševati družinske probleme ali biti 'močni' namesto staršev. Zato enooblastni terapevtski model doživljajo kot naravnega, čeprav je zgolj ponovitev zgodnjega vzorca. Guggenbuhl-Craig to dinamiko implicitno opisuje (terapevt kot rešitelj, šarlatan, lažni prerok), a je ne poveže z družinskim izvorom poklicne izbire. Philippson gre dlje: enooblastna predpostavka ni samo terapevtova senca, ampak je vgrajena v samo strukturo večine psihoterapevtskih pristopov in izobraževalnih sistemov. Zato je supervizor in teoretik, ki dela v istem okviru, pogosto slep za isto dinamiko.",
-      implications: "Za izpit je ta argument močan most med Guggenbuhl-Craigovo knjigo in gestalt kritiko: avtor pravilno vidi nevarnost, a ker sam dela znotraj enooblastnega modela (analitik razume, pacient ne), ne more ponuditi izhoda. Gestalt dvooblastni model predlaga drugačno izhodišče: terapevt ne 'razume sence', ampak vstopi v odnos, kjer sta oba enako izpostavljena."
+      implications: "Za izpit je ta argument močan most med Guggenbuhl-Craigovo knjigo in gestalt kritiko: avtor pravilno vidi nevarnost in pravilno zavrne supervizijo ter re-analizo. Toda njegova rešitev – eros zunaj terapije – ne spremeni enooblastne strukture terapevtskega odnosa samega. Gestalt dvooblastni model predlaga drugačno izhodišče: terapevt ne čaka, da ga prijatelji pretresejo, ampak vstopi v terapevtski odnos, kjer sta oba enako izpostavljena."
     },
     {
       title: "Dvooblastni odnos kot alternativa zavedanju sence",
-      text: "Philippson trdi, da v dvooblastnem terapevtskem odnosu klient 'ne dela nič narobe' – v terapiji kaže svoj način bivanja v svetu. Terapevtova naloga ni interpretirati ali popravljati, ampak se z njim srečati v tem, kar je. To neposredno nasprotuje Guggenbuhl-Craigovi rešitvi: avtor predlaga terapevtovo samorefleksijo (zavedanje sence), Philippson pa pravi, da se moč transformira šele v dvooblastnem srečanju. Sprašuje: ali ljudje v težavah potrebujejo drugega človeka, ki je z njimi (two-power), ali ogledalo, ki jih odseva nazaj (one-power)? Odgovor je za gestalt terapijo jasen: potrebujejo drugega človeka. Prav to je Bubrovo Jaz-Ti srečanje, ki ga Guggenbuhl-Craig omeni le bežno.",
+      text: "Philippson trdi, da v dvooblastnem terapevtskem odnosu klient 'ne dela nič narobe' – v terapiji kaže svoj način bivanja v svetu. Terapevtova naloga ni interpretirati ali popravljati, ampak se z njim srečati v tem, kar je. Guggenbuhl-Craig predlaga, da terapevta od zunaj pretresejo neanalitični odnosi (prijateljstvo, partnerstvo, otroci), a s tem rešitev postavi zunaj terapevtskega odnosa. Philippson pa pravi, da se moč transformira šele znotraj terapije – v dvooblastnem srečanju. Sprašuje: ali ljudje v težavah potrebujejo drugega človeka, ki je z njimi (two-power), ali ogledalo, ki jih odseva nazaj (one-power)? Odgovor je za gestalt terapijo jasen: potrebujejo drugega človeka. Prav to je Bubrovo Jaz-Ti srečanje, ki ga Guggenbuhl-Craig omeni le bežno.",
       implications: "To razlikovanje je uporabno tudi za kritiko avtorjeve metafore ranjenega zdravilca. Avtor sicer zahteva, da terapevt ohrani stik z lastno ranljivostjo, a Philippson opozori, da sama ranljivost ne zadošča: bistveno je, ali se ranljivost kaže v enooblastnem (terapevt je ranljiv, a še vedno edini, ki 've') ali dvooblastnem (oba sta ranljiva in oba prispevata k iskanju stika) okviru."
     },
     {
@@ -725,13 +725,13 @@ window.STUDY_DATA.gestaltCritique = {
     title: "Sinteza: kaj gestalt perspektiva doda za ustni izpit",
     points: [
       "Guggenbuhl-Craig pravilno identificira problem moči, a ga obravnava pretežno intrapsiično in mitološko. Gestalt doda: moč je pojav polja, ne samo terapevtove notranjosti.",
-      "Avtorjeva rešitev (zavedanje sence + eros + supervizija) je nujna, a nezadostna. Gestalt doda: dialog, inkluzija, podpora klientovemu agensu, strukturna refleksija, telesno ozaveščanje in paradoksna teorija spremembe.",
+      "Avtor sam zavrne supervizijo, re-analizo in zavedanje sence kot nezadostne rešitve. Njegova edina rešitev je eros – neanalitični odnosi (prijateljstvo, partnerstvo, otroci), ki terapevta pretresejo od zunaj. Toda tudi ta rešitev ostaja zunaj terapevtskega odnosa. Gestalt doda: dialog in inkluzija znotraj terapije, podpora klientovemu agensu, strukturna refleksija, telesno ozaveščanje in paradoksna teorija spremembe.",
       "Jungovska simbolna interpretacija je lahko sama oblika moči, ki jo avtor kritizira pri drugih. Gestalt fenomenologija je tu doslednejša: ostaja pri izkušnji, ne pri pomenu od zunaj.",
       "Avtorjevo 'bratstvo ranjenega zdravilca' se v gestalt jeziku prevede kot dialoška prisotnost: ne identifikacija s klientom, ampak inkluzija – zmožnost bivati v klientovem svetu, ne da bi zapustil svojega.",
       "Sodobna gestalt terapija bi dodala dimenzijo družbene pravičnosti: moč v terapiji ni ločena od rasnih, spolnih, razrednih in kulturnih razmerij moči v širšem polju.",
-      "Paradoksna teorija spremembe ponuja alternativo moralnemu imperativu 'zavedaj se sence': namesto prizadevanja za zavedanje, polno sprejemanje tega, kar je – vključno z oblastjo.",
-      "Philippsonova (2020) distinkcija enooblastne in dvooblastne terapije je najostrejša gestalt kritika: Guggenbuhl-Craig ostaja v enooblastnem modelu (analitik, ki se zaveda sence, a še vedno edini 've'). Gestalt rešitev ni boljša samorefleksija znotraj istega modela, ampak strukturna sprememba v dvooblastni odnos, kjer sta oba enako izpostavljena.",
-      "Philippsonov argument, da večina terapevtov prihaja iz enooblastnih družin, razloži, zakaj je enooblastni model tako samoumeven – in zakaj ga niti supervizija niti zavedanje sence ne moreta odpraviti, če delujeta znotraj istega okvira."
+      "Avtor pravilno vidi, da introspekcija ne deluje, a namesto nje predlaga zunanji pretres (eros). Gestalt paradoksna teorija spremembe ponuja tretjo pot: ne introspekcija, ne zunanji pretres, ampak polno sprejemanje tega, kar je – vključno z oblastjo. Sprememba nastane iz stika, ne iz prizadevanja ali šoka.",
+      "Philippsonova (2020) distinkcija enooblastne in dvooblastne terapije je najostrejša gestalt kritika: Guggenbuhl-Craig ostaja v enooblastnem modelu – njegova rešitev (eros zunaj terapije) ne spremeni strukture terapevtskega odnosa, ampak terapevta popravlja od zunaj. Gestalt rešitev ni zunanji korektiv, ampak strukturna sprememba samega odnosa v dvooblastni model, kjer sta oba enako izpostavljena.",
+      "Philippsonov argument, da večina terapevtov prihaja iz enooblastnih družin, razloži, zakaj je enooblastni model tako samoumeven – in zakaj ga niti prijateljstvo zunaj terapije (avtorjeva rešitev) niti supervizija (ki jo avtor sam zavrne) ne moreta odpraviti, če terapevtski odnos sam ostane enooblasten."
     ]
   },
   examApplication: {
@@ -743,8 +743,8 @@ window.STUDY_DATA.gestaltCritique = {
       "Pokaži, da poznaš razliko med fenomenološkim in interpretativnim pristopom: gestalt ostaja pri opisu izkušnje, Jung pri simbolni razlagi.",
       "Če te vprašajo o alternativah avtorjevemu pristopu, lahko ponudiš gestalt dialoški model: moč se transformira v srečanju, ne v introspekciji.",
       "Poveži z lastno prakso: kako v realnem času zaznaš moč v svojem telesu, tonu, drži – ne retroaktivno skozi mitološko refleksijo.",
-      "Philippsonovo razlikovanje enooblastna/dvooblastna terapija je odlična izpitna formulacija: Guggenbuhl-Craig opisuje problem enooblastne terapije, a ne vidi, da je tudi njegova rešitev enooblastna. Gestalt dvooblastni model je strukturna alternativa, ne samo dopolnilo.",
-      "Če te vprašajo o tem, zakaj je problem moči tako trdovraten, uporabi Philippsonov argument o družinskem izvoru: terapevti pogosto prihajajo iz enooblastnih družin, zato enooblastni model doživljajo kot naraven in samoumeven – tudi v superviziji."
+      "Philippsonovo razlikovanje enooblastna/dvooblastna terapija je odlična izpitna formulacija: Guggenbuhl-Craig pravilno zavrne supervizijo in introspekcijo, a njegova rešitev (eros zunaj terapije) ne spremeni enooblastne strukture terapevtskega odnosa. Gestalt dvooblastni model je strukturna alternativa, ne samo dopolnilo.",
+      "Če te vprašajo o tem, zakaj je problem moči tako trdovraten, uporabi Philippsonov argument o družinskem izvoru: terapevti pogosto prihajajo iz enooblastnih družin, zato enooblastni model doživljajo kot naraven in samoumeven. Avtor sam to pokaže z zavrnitvijo supervizije – a tudi njegov eros ostaja zunanji korektiv, ki ne spremeni strukture odnosa v terapiji."
     ]
   },
   keyTerms: [
