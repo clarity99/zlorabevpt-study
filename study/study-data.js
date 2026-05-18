@@ -699,6 +699,26 @@ window.STUDY_DATA.gestaltCritique = {
       title: "Enostranska fokusiranost na terapevta – klientov agens",
       text: "Knjiga je pretežno usmerjena v terapevtovo senco, ranljivost in odgovornost. Klient nastopa večinoma kot ranljiv, ogrožen, odvisen od terapevtove samorefleksije. Gestalt perspektiva bi poudarila klientov agens, zmožnost in samoregulacijo. Tudi v asimetričnem odnosu je klient aktiven soustvarjalec polja. Gestalt terapija zaupa organizmu: klient ni pasivna žrtev terapevtove sence, ampak ima lastne mehanizme preživetja, odpora in samoregulacije.",
       implications: "To ne pomeni, da je zloraba klientova odgovornost. Pomeni, da gestalt perspektiva dodaja tretjo dimenzijo: poleg terapevtove samorefleksije in zunanjih varoval (supervizija, etični kodeksi) je tu tudi podpora klientovi zmožnosti, da prepozna, poimenuje in zavrne terapevtovo oblast. Terapija, ki krepi klientov agens, je sama po sebi zaščita pred zlorabo."
+    },
+    {
+      title: "Philippsonova kritika: enooblastna terapija vs. dvooblastna gestalt terapija",
+      text: "Peter Philippson (2020) v članku 'One-Power and Two-Power Therapy' ponudi neposredno gestalt kritiko, ki zadene jedro Guggenbuhl-Craigove knjige. Philippson loči enooblastne (one-power) in dvooblastne (two-power) terapevtske odnose. V enooblastnem odnosu ima moč vedno samo ena oseba: ali terapevt 'opolnomoči' klienta (Rogers, Kohut), ali ga vodi v boljše načine razmišljanja (KVT, hipnoterapija). Guggenbuhl-Craig opisuje prav ta problem – a Philippson pokaže, da je večina psihoterapij, vključno z avtorjevo jungovsko tradicijo, strukturno enooblastna. Izvirna gestalt terapija pa je bila zasnovana kot dvooblastni odnos: oba, terapevt in klient, sta močna, prisotna in aktivna, oba prispevata k težkemu skupnemu delu iskanja stika. V dvooblastnem odnosu klient ni prejemnik pomoči, ampak soudeležen v polju, kjer oba tvegata.",
+      implications: "Philippsonova kritika je za izpit izjemno uporabna, ker pokaže, da Guggenbuhl-Craigov problem ni rešljiv z boljšo samorefleksijo znotraj enooblastnega modela. Rešitev zahteva strukturno spremembo odnosa: prehod v dvooblastno terapijo, kjer terapevt ne more biti niti rešitelj niti čarovnik, ker klient ni v šibkejši poziciji. To je radikalnejša kritika od avtorjeve: avtor ostaja pri samorefleksiji v okviru enooblastnega odnosa, Philippson pa trdi, da je treba spremeniti sam okvir."
+    },
+    {
+      title: "Enooblastni vzorci iz družine – slepa pega terapevtov in avtorja",
+      text: "Philippson izpostavi, da terapevti pogosto prihajajo iz enooblastnih družin – kjer so morali skrbeti za starše, reševati družinske probleme ali biti 'močni' namesto staršev. Zato enooblastni terapevtski model doživljajo kot naravnega, čeprav je zgolj ponovitev zgodnjega vzorca. Guggenbuhl-Craig to dinamiko implicitno opisuje (terapevt kot rešitelj, šarlatan, lažni prerok), a je ne poveže z družinskim izvorom poklicne izbire. Philippson gre dlje: enooblastna predpostavka ni samo terapevtova senca, ampak je vgrajena v samo strukturo večine psihoterapevtskih pristopov in izobraževalnih sistemov. Zato je supervizor in teoretik, ki dela v istem okviru, pogosto slep za isto dinamiko.",
+      implications: "Za izpit je ta argument močan most med Guggenbuhl-Craigovo knjigo in gestalt kritiko: avtor pravilno vidi nevarnost, a ker sam dela znotraj enooblastnega modela (analitik razume, pacient ne), ne more ponuditi izhoda. Gestalt dvooblastni model predlaga drugačno izhodišče: terapevt ne 'razume sence', ampak vstopi v odnos, kjer sta oba enako izpostavljena."
+    },
+    {
+      title: "Dvooblastni odnos kot alternativa zavedanju sence",
+      text: "Philippson trdi, da v dvooblastnem terapevtskem odnosu klient 'ne dela nič narobe' – v terapiji kaže svoj način bivanja v svetu. Terapevtova naloga ni interpretirati ali popravljati, ampak se z njim srečati v tem, kar je. To neposredno nasprotuje Guggenbuhl-Craigovi rešitvi: avtor predlaga terapevtovo samorefleksijo (zavedanje sence), Philippson pa pravi, da se moč transformira šele v dvooblastnem srečanju. Sprašuje: ali ljudje v težavah potrebujejo drugega človeka, ki je z njimi (two-power), ali ogledalo, ki jih odseva nazaj (one-power)? Odgovor je za gestalt terapijo jasen: potrebujejo drugega človeka. Prav to je Bubrovo Jaz-Ti srečanje, ki ga Guggenbuhl-Craig omeni le bežno.",
+      implications: "To razlikovanje je uporabno tudi za kritiko avtorjeve metafore ranjenega zdravilca. Avtor sicer zahteva, da terapevt ohrani stik z lastno ranljivostjo, a Philippson opozori, da sama ranljivost ne zadošča: bistveno je, ali se ranljivost kaže v enooblastnem (terapevt je ranljiv, a še vedno edini, ki 've') ali dvooblastnem (oba sta ranljiva in oba prispevata k iskanju stika) okviru."
+    },
+    {
+      title: "Raziskovalni paradoks: manualizacija uniči dvooblastnost",
+      text: "Philippson opozori, da je standardna raziskovalna metodologija (RCT, manualizirani protokoli) inherentno enooblastna: predpostavlja, da terapevt predpisuje intervencijo, pacient pa jo prejme. Poskusi znanstvenega ovrednotenja gestalt terapije po tej metodi jo zato nujno spremenijo v enooblastno prakso in uničijo prav tisto, kar je pri njej najpomembnejše. Kot pišeta Yontef in Philippson (2008): 'Neveljavno je testirati učinkovitost gestalt terapije z merjenjem vnaprej zastavljenih ciljev brez upoštevanja kompleksnosti sprememb, ki nastanejo iz fenomenološkega fokusiranja in dialoga.' To dopolni Guggenbuhl-Craigovo kritiko objektivizma: problem ni samo v tem, da objektivnost postane obramba (kar avtor pravilno vidi), ampak da sam raziskovalni aparat, ki naj bi terapijo potrdil, jo strukturno izkrivi.",
+      implications: "Za izpit je to uporabno pri vprašanju o dokazih in znanstvenosti psihoterapije: gestalt argument ni, da terapija ne sme biti ovrednotena, ampak da jo je treba ovrednotiti z metodami, ki spoštujejo dvooblastnost odnosa – ne pa z metodami, ki jo ukinejo."
     }
   ],
   synthesis: {
@@ -709,7 +729,9 @@ window.STUDY_DATA.gestaltCritique = {
       "Jungovska simbolna interpretacija je lahko sama oblika moči, ki jo avtor kritizira pri drugih. Gestalt fenomenologija je tu doslednejša: ostaja pri izkušnji, ne pri pomenu od zunaj.",
       "Avtorjevo 'bratstvo ranjenega zdravilca' se v gestalt jeziku prevede kot dialoška prisotnost: ne identifikacija s klientom, ampak inkluzija – zmožnost bivati v klientovem svetu, ne da bi zapustil svojega.",
       "Sodobna gestalt terapija bi dodala dimenzijo družbene pravičnosti: moč v terapiji ni ločena od rasnih, spolnih, razrednih in kulturnih razmerij moči v širšem polju.",
-      "Paradoksna teorija spremembe ponuja alternativo moralnemu imperativu 'zavedaj se sence': namesto prizadevanja za zavedanje, polno sprejemanje tega, kar je – vključno z oblastjo."
+      "Paradoksna teorija spremembe ponuja alternativo moralnemu imperativu 'zavedaj se sence': namesto prizadevanja za zavedanje, polno sprejemanje tega, kar je – vključno z oblastjo.",
+      "Philippsonova (2020) distinkcija enooblastne in dvooblastne terapije je najostrejša gestalt kritika: Guggenbuhl-Craig ostaja v enooblastnem modelu (analitik, ki se zaveda sence, a še vedno edini 've'). Gestalt rešitev ni boljša samorefleksija znotraj istega modela, ampak strukturna sprememba v dvooblastni odnos, kjer sta oba enako izpostavljena.",
+      "Philippsonov argument, da večina terapevtov prihaja iz enooblastnih družin, razloži, zakaj je enooblastni model tako samoumeven – in zakaj ga niti supervizija niti zavedanje sence ne moreta odpraviti, če delujeta znotraj istega okvira."
     ]
   },
   examApplication: {
@@ -720,7 +742,9 @@ window.STUDY_DATA.gestaltCritique = {
       "Uporabi konkretni gestalt jezik: kontaktna meja, ustvarjalna prilagoditev, paradoksna teorija spremembe, inkluzija, prisotnost, podpora samoregulaciji.",
       "Pokaži, da poznaš razliko med fenomenološkim in interpretativnim pristopom: gestalt ostaja pri opisu izkušnje, Jung pri simbolni razlagi.",
       "Če te vprašajo o alternativah avtorjevemu pristopu, lahko ponudiš gestalt dialoški model: moč se transformira v srečanju, ne v introspekciji.",
-      "Poveži z lastno prakso: kako v realnem času zaznaš moč v svojem telesu, tonu, drži – ne retroaktivno skozi mitološko refleksijo."
+      "Poveži z lastno prakso: kako v realnem času zaznaš moč v svojem telesu, tonu, drži – ne retroaktivno skozi mitološko refleksijo.",
+      "Philippsonovo razlikovanje enooblastna/dvooblastna terapija je odlična izpitna formulacija: Guggenbuhl-Craig opisuje problem enooblastne terapije, a ne vidi, da je tudi njegova rešitev enooblastna. Gestalt dvooblastni model je strukturna alternativa, ne samo dopolnilo.",
+      "Če te vprašajo o tem, zakaj je problem moči tako trdovraten, uporabi Philippsonov argument o družinskem izvoru: terapevti pogosto prihajajo iz enooblastnih družin, zato enooblastni model doživljajo kot naraven in samoumeven – tudi v superviziji."
     ]
   },
   keyTerms: [
@@ -733,6 +757,9 @@ window.STUDY_DATA.gestaltCritique = {
     ["Podpora samoregulaciji", "Gestalt zaupa organizmu: naloga terapevta ni 'zdraviti' ali 'interpretirati', ampak podpreti klientov lastni proces ozaveščanja in prilagajanja."],
     ["Fenomenološka metoda", "Ostati pri tem, kar se kaže – pri čutnem, telesnem, neposrednem – namesto da izkušnjo dvigujemo na 'višjo' simbolno raven."],
     ["Defleksija", "Kontaktna motnja: izogibanje neposrednemu stiku. Pri terapevtu: beg v teorijo, interpretacijo ali vlogo namesto v živ stik s klientom."],
-    ["Retroflekcija", "Kontaktna motnja: obrnitev impulza nazaj vase. Pri terapevtu: zadrževanje lastne ranljivosti, ki bi jo moral pokazati v polju."]
+    ["Retroflekcija", "Kontaktna motnja: obrnitev impulza nazaj vase. Pri terapevtu: zadrževanje lastne ranljivosti, ki bi jo moral pokazati v polju."],
+    ["Enooblastna terapija (one-power)", "Philippson (2020): terapevtski odnos, v katerem ima moč vedno samo ena oseba. Terapevt bodisi 'opolnomoči' klienta bodisi ga vodi. Večina psihoterapij – Rogers, KVT, hipnoterapija, tudi jungovska analiza – je strukturno enooblastna."],
+    ["Dvooblastna terapija (two-power)", "Philippson (2020): terapevtski odnos, v katerem sta oba – terapevt in klient – močna, prisotna in aktivna. Izvirna gestalt terapija je bila zasnovana kot dvooblastni odnos. Oba prispevata k težkemu skupnemu delu iskanja stika."],
+    ["Enooblastna družina", "Philippson: družina, v kateri ima moč vedno samo ena oseba. Terapevti pogosto prihajajo iz takšnih družin, zato enooblastni terapevtski model doživljajo kot naravnega."]
   ]
 };
